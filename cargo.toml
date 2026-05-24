@@ -1,0 +1,23 @@
+[package]
+name = "bakome_mega_bot"
+version = "8.0.0"
+edition = "2021"
+description = "BAKOME_MEGA-BOT v8.0 COLOSSUS — Telegram + Discord + Matrix + AI Hybrid + Voice + Web3"
+authors = ["BAKOME"]
+license = "MIT"
+repository = "https://github.com/BAKOME-Hub/BAKOME_MEGA-BOT"
+
+[dependencies]
+axum = "0.7"
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sqlx = { version = "0.8", features = ["runtime-tokio", "sqlite"] }
+reqwest = { version = "0.12", features = ["json"] }
+tracing = "0.1"
+tracing-subscriber = "0.3"
+chrono = { version = "0.4", features = ["serde"] }
+rand = "0.8"
+anyhow = "1"
+sha2 = "0.10"
+hex = "0.4"
